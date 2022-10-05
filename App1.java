@@ -8,7 +8,7 @@ public class App1 extends Application {
 
         cs331TicTacToeFrame frame = new cs331TicTacToeFrame(stage);
 
-        frame.addGame(null);
+        frame.addGame(new myTicTacToe());
 
     }
 
