@@ -18,14 +18,17 @@ public class Players implements cs331TicTacToePlayer {
     }
 
     public void selectSquare(int row, int col) {
+        // setting square
         cs331TicTacToeSquare square = board.squareAt(row, col);
         square.markSquare(symbol);
+        // preparing next turn
         board.clearHighlights();
         controller.setControllerMessage("Player " + symbol + " finsihed their turn");
         controller.finishedTurn();
 
     }
 
+    // returning symbol
     public String getSymbol() {
         return this.symbol;
     }
